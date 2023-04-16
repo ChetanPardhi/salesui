@@ -10,7 +10,7 @@ import Upload from "./pages/Upload";
 import Stats from "./pages/Stats";
 import About from "./pages/About";
 import DrawerComponent from "./componenet/Drawer";
-import Appbar from './componenet/Appbar'
+import AppbarComponent from "./componenet/AppbarComponent"
 
 const theme = createTheme({
   typography: {
@@ -26,8 +26,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <DrawerComponent>
-        <Appbar />
-
+        <AppbarComponent />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/generate" element={<Generate />} />
